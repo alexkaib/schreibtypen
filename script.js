@@ -26,16 +26,11 @@ userDat.result = function() {
     if (userDat.type1 > 2 || userDat.type2 > 2 || userDat.type3 > 2 || userDat.type4 > 2) {
         return("Your type seems pretty clear! For more details, check out these descriptions!");
     }
-    else if (userDat.type1 === 2 === userDat.type2 || userDat.type1 === 2 === userDat.type3 || userDat.type1 === 2 === userDat.type4 || userDat.type2 === 2 === userDat.type3 || userDat.type2 === 2 === userDat.type4 || userDat.type3 === 2 === userDat.type4) {
-        return("Right down the middle, interesting! For more details, check out these descriptions!");
-    }
     else {
         return("What an interesting mix! For more details, check out these descriptions!");
     };
 };
- 
- 
- 
+  
 var $adventurer_img = '<img src="https://dl.dropboxusercontent.com/s/exqnh3vdl18jvhl/adventurer1.jpg?dl=0" />';
 var $map_img = '<img src="https://dl.dropboxusercontent.com/s/3wmm3ydl7kggva4/map.png?dl=0" />';
 var $chip_img = '<img src="https://dl.dropboxusercontent.com/s/oeiurampifmohaa/chipmunk1.jpg?dl=0" />';
@@ -84,34 +79,37 @@ $(document).ready(function(){
         $('#answer').append(userDat.result);
         $(this).slideUp('slow');
         $('.container-fluid').slideDown('slow');}
+        else {
+        	
+        };
     });
      
     $('#get_adv').click(function(){
         $('#deca_jumbo').hide();
         $('#chip_jumbo').hide();
         $('#gold_jumbo').hide();
-        $('#adventurer_jumbo').slideDown('slow');
+        $('#adventurer_jumbo').fadeIn('slow');
     });
      
     $('#get_dec').click(function(){
         $('#adventurer_jumbo').hide();
         $('#chip_jumbo').hide();
         $('#gold_jumbo').hide();
-        $('#deca_jumbo').slideDown('slow');
+        $('#deca_jumbo').fadeIn('slow');
     });
      
     $('#get_chip').click(function(){
         $('#adventurer_jumbo').hide();
         $('#gold_jumbo').hide();
         $('#deca_jumbo').hide();
-        $('#chip_jumbo').slideDown('slow');
+        $('#chip_jumbo').fadeIn('slow');
     });
      
     $('#get_gold').click(function(){
         $('#adventurer_jumbo').hide();
         $('#chip_jumbo').hide();
         $('#deca_jumbo').hide();
-        $('#gold_jumbo').slideDown('slow');
+        $('#gold_jumbo').fadeIn('slow');
     });
      
     $('#reload').click(function(){
