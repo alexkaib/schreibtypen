@@ -1,0 +1,95 @@
+body {
+    background-color: #e78c22;
+    color: white;
+    font-family: 'Roboto Slab';
+}
+ 
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+ 
+#reveal-btn {
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+ 
+#reveal-btn:hover {
+    color: orange;
+    background-color: white;
+}
+ 
+.col-md-3 .not_answered  {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+ 
+h4 {
+    color: black;
+}
+ 
+.not_answered li {
+    cursor: pointer;
+}
+ 
+.not_answered li:hover {
+    color: black;
+    font-weight: bold;
+}
+ 
+.not_answered img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: none;
+}
+ 
+#answer {
+    text-align: center;
+}
+ 
+.container-fluid {
+    text-align: center;
+    display: none;
+}
+ 
+.jumbotron {
+    background-color: white;
+    color: orange;
+    min-height: 450px;
+    display: none;
+    margin-top: 30px;
+}
+ 
+.jumbotron h1 {
+    margin-bottom: -10px;
+}
+ 
+.jumbotron h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.jumbotron ul {
+ 
+}
+ 
+#reload {
+    margin-top: 20px;
+    text-align: center;
+}
+ 
+footer {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #FFCA57;
+}
