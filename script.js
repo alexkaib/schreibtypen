@@ -77,12 +77,13 @@ $(document).ready(function(){
     });
      
     $('#reveal-btn').click(function(){
+        if (userDat.type1 + userDat.type2 + userDat.type3 + userDat.type4 > 3){
         $('#answer').append("You are " + userDat.type1*25 + "% adventurer, " + userDat.type2*25
         + "% chipmunk, " + userDat.type3*25 + "% gold digger and " + userDat.type4*25 + "% decathlete.");
         $('#answer').append($('</br>'));
         $('#answer').append(userDat.result);
         $(this).slideUp('slow');
-        $('.container-fluid').slideDown('slow');
+        $('.container-fluid').slideDown('slow');}
     });
      
     $('#get_adv').click(function(){
