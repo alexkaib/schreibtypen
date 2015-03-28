@@ -8,6 +8,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="https://dl.dropboxusercontent.com/s/1qtr28rgnjd4icm/page1.css?dl=0">
 		<script type="text/javascript" src="https://dl.dropbox.com/s/6knb10ncaeklhri/script.js?dl=0"></script>
+		<!--FOR LOCAL EDITS
+		<script src="script.js"></script>
+		<link type="text/css" rel="stylesheet" href="page1.css">
+		!-->
+
 		
 	</head>
 	
@@ -69,7 +74,7 @@
 	</div>
 	</div>
 	
-	<div id="answer" class="container">
+	<div class="container">
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
@@ -79,8 +84,10 @@
 	</div>
 	</div>
 	
+	<div id="answer"></div>
+	
 	<div class="container-fluid">
-	<div class="btn-group" role="group" aria-label="...">
+	<div id="type_buttons" class="btn-group" role="group" aria-label="...">
 	    <button id="get_adv" type="button" class="btn btn-default">Adventurer</button>
 	    <button id="get_chip" type="button" class="btn btn-default">Chipmunk</button>
 	    <button id="get_dec" type="button" class="btn btn-default">Decathlete</button>
@@ -193,7 +200,7 @@
 	</div>
 	
 	<div id="reload">
-	<div type="button" class="btn btn-default btn-lg">
+	<div id="reload_in" type="button" class="btn btn-default btn-lg">
 	    <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
 	    Let's Go Again!
 	</div>
